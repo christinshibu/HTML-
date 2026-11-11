@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            padding: auto;
+            background-color: antiquewhite;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <legend>STUDENT REGISTRATION FORM</legend>
+        <label for="">Fullname:</label>
+        <input type="text" required placeholder="Enter Your Name">
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" required minlength="8" maxlength="10" placeholder="Enter Your Password">
+        <br><br>
+        <label for="">Age</label>
+        <input type="number" min="3" max="10" name="" id="">
+        <br><br>
+        <label for="">Contact Number</label>
+        <input type="tel" pattern="[0-9]{10}" name="" id="">
+        <br><br>
+        <label for="">Country:</label>
+        <input type="text" value="India" readonly name="" id="">
+        <br><br>
+        <button>Register</button>
+    </fieldset>
+    </form>
+</body>
+</html>

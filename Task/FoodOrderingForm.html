@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .food input,
+        .payment input {
+            width: auto;
+        }
+
+        .food,
+        .payment {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .submit {
+            background-color: blue;
+        }
+
+        .reset {
+            background-color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2>Food Ordering Form</h2>
+
+        <form>
+
+            <label>Customer Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number" pattern="[0-9]{10}">
+
+            <label>Restaurant:</label>
+            <select>
+                <option>Select Restaurant</option>
+                <option>Indian Restaurant</option>
+                <option>Chinese Restaurant</option>
+                <option>Italian Restaurant</option>
+                <option>Arabic Restaurant</option>
+            </select>
+
+            <label>Food Items:</label>
+
+            <div class="food">
+                <input type="checkbox"> Pizza
+                <input type="checkbox"> Burger
+                <input type="checkbox"> Biryani
+                <input type="checkbox"> Fried Rice
+            </div>
+
+            <label>Spice Level:</label>
+            <input type="range" min="1" max="10">
+
+            <label>Delivery Time:</label>
+            <input type="time">
+
+            <label>Delivery Address:</label>
+            <textarea rows="4" placeholder="Enter your address"></textarea>
+
+            <label>Payment Method:</label>
+
+            <div class="payment">
+                <input type="radio" name="payment"> Cash
+                <input type="radio" name="payment"> UPI
+                <input type="radio" name="payment"> Card
+            </div>
+
+            <label>Coupon Code:</label>
+            <input type="text" placeholder="Enter coupon code">
+
+            <button type="submit" class="submit">Place Order</button>
+            <button type="reset" class="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

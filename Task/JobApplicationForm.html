@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender input,
+        .language input {
+            width: auto;
+        }
+
+        .gender,
+        .language {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .submit {
+            background-color: blue;
+        }
+
+        .reset {
+            background-color: rgb(144, 143, 143);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2>Job Application Form</h2>
+
+        <form>
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}">
+
+            <label>Date of Birth:</label>
+            <input type="date">
+
+            <label>Gender:</label>
+
+            <div class="gender">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </div>
+
+            <label>Qualification:</label>
+
+            <select>
+                <option>Select Qualification</option>
+                <option>SSLC</option>
+                <option>Plus Two</option>
+                <option>Diploma</option>
+                <option>Degree</option>
+                <option>Post Graduation</option>
+            </select>
+
+            <label>Experience (Years):</label>
+            <input type="number" min="0" placeholder="Enter experience">
+
+            <label>Preferred Location:</label>
+
+            <select>
+                <option>Select Location</option>
+                <option>Kochi</option>
+                <option>Calicut</option>
+                <option>Trivandrum</option>
+                <option>Bangalore</option>
+            </select>
+
+            <label>Languages Known:</label>
+
+            <div class="language">
+                <input type="checkbox"> English
+                <input type="checkbox"> Malayalam
+                <input type="checkbox"> Hindi
+            </div>
+
+            <label>Upload Resume:</label>
+            <input type="file">
+
+            <label>Cover Letter:</label>
+
+            <textarea rows="4" placeholder="Write a short cover letter"></textarea>
+
+            <button type="submit" class="submit">Apply</button>
+            <button type="reset" class="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie World</title>
+    <style>
+        
+        header {
+            background-color: rgb(138, 2, 2);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            color: yellow;
+        }
+
+        nav {
+            background-color: rgb(39, 23, 23);
+            text-align: center;
+            padding: 12px;
+        }
+
+        a {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+        }
+
+        main {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .One {
+            color: rgb(149, 0, 0);
+        }
+
+        .Two {
+            color: rgb(0, 46, 86);
+        }
+
+        /*------------------------- Card------------------ */
+        .card {
+            
+            height: fit-content;
+            width: 250px;
+            padding: 10px;
+            background-color: rgb(45, 45, 45);
+            border-radius: 10px;
+        }
+
+        .container {
+            padding: 10px;
+            color: white;
+
+        }
+
+        .caro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        .c_img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* ----------------------------------------------------------- */
+
+        .about {
+            background-color: rgb(251, 251, 206);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .available {
+            background-color: rgb(252, 248, 187);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .tble {
+            background-color: rgb(255, 255, 183);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .book {
+            background-color: blue;
+        }
+
+        .reset {
+            background-color: rgb(144, 143, 143);
+        }
+
+        form {
+            background-color: rgb(234, 255, 190);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .facility {
+            background-color: rgb(227, 255, 200);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .contact {
+            background-color: rgb(208, 255, 243);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .button {
+            border-radius: 15px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .iframe {
+            background-color: rgb(208, 255, 243);
+            /* text-align: center; */
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <h1>CINEMA WORLD🎬</h1>
+        <p>Book your <span>favorite movie tickets</span> online</p>
+    </header>
+
+    <!-- Navbar -->
+
+    <nav>
+        <a href="">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="#nowshowing">Movies</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="#showtiming">Show Timings</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="#bookticket">Book Tickets</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Section -->
+
+    <main id="nowshowing" style="background-color: black;">
+        <h1>NOW SHOWING</h1>
+        <div class="caro">
+            <div class="card">
+                <img class="c_img" src="./Spadikam.png" alt="" style="width:100%">
+                <div class="container">
+                    <h4><b>Spadikam</b></h4>
+                    <p>IMDb Rating : ⭐7.8 (29K)</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="c_img" src="./Charlie.png" alt="" style="width:100%">
+                <div class="container">
+                    <h4><b>Charlie</b></h4>
+                    <p>IMDb Rating : ⭐7.2 (21K)</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="c_img" src="./ThattathinMarayath.png" alt="" style="width:100%">
+                <div class="container">
+                    <h4><b>Thattathin Marayathu</b></h4>
+                    <p>IMDb Rating : ⭐7.5 (19K)</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="c_img" src="./Thudarum.png" alt="" style="width:100%">
+                <div class="container">
+                    <h4><b>Thudarum</b></h4>
+                    <p>IMDb Rating : ⭐8.3 (30K)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="about">
+            <h2 class="One">ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi nihil iste facilis? Est, nihil maxime
+                quia maiores omnis officia.</p>
+        </div>
+        <div class="available">
+            <h2 class="Two">AVAILABLE MOVIES</h2>
+            <ul>
+                <li>Spadikam</li> <br>
+                <li>Charlie</li> <br>
+                <li>Thattathin Marayath</li> <br>
+                <li>Thudarum</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Table -->
+
+    <div id="showtiming" class="tble">
+        <table border="1px" cellpadding="15px" style="text-align: center ;">
+            <h2 class="One">SHOW TIMINGS</h2>
+            <tr>
+                <th>Movie</th>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Spadikam</td>
+                <td>6 Am</td>
+                <td>&#8377 250</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>9 Am</td>
+                <td>&#8377 250</td>
+            </tr>
+            <tr>
+                <td>Thattathin Marayath</td>
+                <td>12 Pm</td>
+                <td>&#8377 250</td>
+            </tr>
+            <tr>
+                <td>Thudarum</td>
+                <td>3 Pm</td>
+                <td>&#8377 250</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Form -->
+
+    <form id="bookticket" action="">
+        <h2 class="Two">BOOK YOUR TICKET</h2>
+        <label for="">Name:</label><br>
+        <input type="text" name="" id="" placeholder="Enter Your Name">
+        <br><br>
+        <label for="">Email:</label><br>
+        <input type="email" name="" id="" placeholder="Enter Your Email">
+        <br><br>
+        <label for="">Phone Number:</label><br>
+        <input type="tel" pattern="[0-9]{10}" placeholder="Enter Your Number">
+        <br><br>
+        <label for="">Select Movies:</label><br>
+        <select name="" id="">
+            <option value="">Choose</option>
+            <option value="">Spadikam</option>
+            <option value="">Charlie</option>
+            <option value="">Thattathin Marayath</option>
+            <option value="">Thudarum</option>
+        </select>
+        <br><br>
+        <label for="">Select Seats:</label><br>
+        <input type="number" name="" id="" placeholder="Select Seat">
+        <br><br>
+        <label for="">Show Date:</label><br>
+        <input type="date" name="" id="">
+        <br><br>
+        <button class="book">Book Now</button> <button class="reset">Reset</button>
+    </form>
+
+    <section>
+
+        <div class="facility">
+            <h2 class="One">THEATRE FACILITIES</h2>
+            <ul>
+                <li><b>IMAX & 4DX Screens</b> – Giant curved screens with immersive visuals, motion seats, wind, water,
+                    and scent effects.</li><br>
+                <li><b>Dolby Atmos Sound</b> – 360° surround sound with overhead speakers for a lifelike audio
+                    experience.</li><br>
+                <li><b>Augmented Reality (AR) & Virtual Reality (VR) Zones</b> – Interactive entertainment before or
+                    after the movie.</li><br>
+                <li><b>Recliner & Pod Seating</b> – Luxurious, adjustable seats with extra legroom, sometimes in private
+                    pods.</li><br>
+                <li><b>Laser Projection</b> – Ultra-bright, high-contrast visuals with sharper colors than traditional
+                    projectors.</li>
+            </ul>
+        </div>
+        <div id="contact" class="contact">
+            <h2 class="Two">CONTACT US</h2>
+            <br>
+            <a href="tel:+919876543210">
+                <button class="button"
+                    style=" background-color: rgb(7, 107, 126); color: white; padding: 8px; border: none;">
+                    Call Us
+                </button></a>
+            <label for="">+91 98989 00556</label>
+            <br><br><br>
+            <a href="mailto:foodhub@gmail.com ?subject= Just Hai &body= Sending hai message only">
+                <button class="button"
+                    style="background-color: rgb(21, 36, 124); color: white; padding: 8px; border: none;">
+                    Mail Us
+                </button></a>
+            <label for="">movieworld@example.com</label>
+            <br><br><br>
+            <a href="https://wa.me/919876543210 ?text= Good Afternoon">
+                <button class="button" style="background-color: green; color: white; padding: 8px; border: none;">
+                    Chat on WhatsApp
+                </button></a>
+        </div>
+        <div class="iframe">
+            <h2 class="One">LOCATION</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125723.70415952364!2d76.21747833954716!3d10.027935080465708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080dafcfe58143%3A0xbc8904685fea136b!2sPVR%20Cinemas!5e0!3m2!1sen!2sin!4v1782743359421!5m2!1sen!2sin"
+                width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </section>
+
+    <footer>
+
+        <div>
+            <h3>&copy; 2026 Movie World</h3>
+        </div>
+    </footer>
+
+</body>
+
+</html>
